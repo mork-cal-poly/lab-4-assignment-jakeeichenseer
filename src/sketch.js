@@ -12,6 +12,8 @@ function draw() {
 
   drawCreature(200, 400, color(156, 212, 240), color(0, 89, 240))
 
+  drawFish(200,400)
+
 }
 
 function drawCreature (x, y, colorBody, colorBodyFin) {
