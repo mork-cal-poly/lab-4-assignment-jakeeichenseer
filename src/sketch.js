@@ -144,3 +144,35 @@ function drawFish(x, y) {
    pop();
   
 }
+
+function drawBackground(x, y) {
+
+  push();
+  
+  translate(x, y);
+  
+  fill(255, 0, 0)
+  noStroke()
+  ellipse(40, 40, 30, 30)
+  
+  fill(255)
+  ellipse(150, 70, 40)
+  
+  fill(150, 0, 0)
+  ellipse(75, 150, 20, 20)
+  
+  fill(175, 0, 0)
+  ellipse(200, 150, 25)
+  
+  fill(100, 0, 0)
+  ellipse(295, 190, 30)
+  
+  fill(125, 0, 0)
+  ellipse(320, 100, 30)
+  
+  fill(255)
+  ellipse(360, 300, 15)
+  
+  pop();
+  
+}
