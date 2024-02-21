@@ -9,6 +9,9 @@ function setup() {
 
 function draw() {
   background(220);
+
+  drawCreature(200, 400, color(156, 212, 240), color(0, 89, 240))
+
 }
 
 function drawCreature (x, y, colorBody, colorBodyFin) {
