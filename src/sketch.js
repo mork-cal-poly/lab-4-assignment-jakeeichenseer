@@ -153,26 +153,26 @@ function drawBackground(x, y) {
   
   translate(x, y);
   
-  fill(255, 0, 0)
+  fill(25, 25, 112)
   noStroke()
   ellipse(40, 40, 30, 30)
   
-  fill(255)
+  fill(0, 0, 128)
   ellipse(150, 70, 40)
   
-  fill(150, 0, 0)
+  fill(31, 81, 255)
   ellipse(75, 150, 20, 20)
   
-  fill(175, 0, 0)
+  fill(25, 25, 112)
   ellipse(200, 150, 25)
   
-  fill(100, 0, 0)
+  fill(0, 0, 128)
   ellipse(295, 190, 30)
   
-  fill(125, 0, 0)
+  fill(31, 81, 255)
   ellipse(320, 100, 30)
   
-  fill(255)
+  fill(25, 25, 112)
   ellipse(360, 300, 15)
   
   pop();
