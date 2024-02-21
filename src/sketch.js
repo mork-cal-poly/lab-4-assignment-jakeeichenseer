@@ -10,6 +10,8 @@ function setup() {
 function draw() {
   background(220);
 
+  drawBackground(0, 0)
+
   drawCreature(200, 400, color(156, 212, 240), color(0, 89, 240))
 
   drawFish(200,400)
