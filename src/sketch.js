@@ -1,3 +1,5 @@
+let clicked=false;
+
 function setup() {
   // These lines are fitting our canvas
   // where we want in the DOM
@@ -177,4 +179,12 @@ function drawBackground(x, y) {
   
   pop();
   
+}
+
+function mouseClicked()
+{
+  if (mouseX > 25 && mouseX < 320 && mouseY > 0 && mouseY < 195)
+  clicked = !clicked;      
+  
+
 }
