@@ -77,3 +77,68 @@ function drawCreature (x, y, colorBody, colorBodyFin) {
    pop();
   
 }
+
+function drawFish(x, y) {
+  
+  push();
+      
+      translate(x, y); 
+  
+// Back Fin
+  
+  fill(240, 138, 67)
+  noStroke()
+  triangle(-195, -175, -100, -125, -195, -75)
+  
+// Stripe on Back Fin
+  
+  fill(240, 198, 0)
+  rect(-195, -130, 70, 10)
+ 
+// Bottom Right Fin
+  
+  fill(240, 138, 67)
+  triangle(0, -70, 100, -70, 0, 0)
+  
+// Bottom Left Fin
+  
+  fill(240, 198, 0)
+  triangle(-115, -100, 0, -40, -65, -7)
+  
+// Top Right Fin
+  
+  fill(240, 158, 45)
+  triangle(70, -230, 110, -190, 0, -110)
+  
+// Top Middle Fin
+  
+  fill(240, 198, 0)
+  triangle(0, -260, 140, -150, -30, -110)
+  fill(240, 198, 0)
+  
+// Top Left Fin
+  
+  fill(240, 138, 67)
+  triangle(-100, -265, 150, -142, -95, -100)
+  
+// Body
+  
+  fill(255, 255, 100)
+  ellipse(0, -130, 300, 180)
+  
+// Eye
+  
+  fill(255)
+  ellipse(90, -140, 44)
+  fill(0)
+  ellipse(90, -140, 20)
+  
+// Body Fin
+  
+  fill(255, 165, 0)
+  noStroke()
+  arc(-15, -130, 100, 100, 5*QUARTER_PI, PI - QUARTER_PI, PIE);
+
+   pop();
+  
+}
