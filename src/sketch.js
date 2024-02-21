@@ -8,7 +8,7 @@ function setup() {
 }
 
 function draw() {
-  background(85, 0, 0);
+  background(173, 216, 230);
 
   drawBackground(0, 0)
 
