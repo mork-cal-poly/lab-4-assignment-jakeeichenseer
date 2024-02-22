@@ -1,5 +1,7 @@
 let clicked=false;
 
+let xBlueFish=200;
+
 function setup() {
   // These lines are fitting our canvas
   // where we want in the DOM
@@ -14,9 +16,13 @@ function draw() {
 
   drawBackground(0, 0)
 
-  drawCreature(200, 400, color(156, 212, 240), color(0, 89, 240))
+  drawCreature(xBlueFish, 400, color(156, 212, 240), color(0, 89, 240))
 
   drawFish(200,400)
+
+  if (clicked) {
+    xBlueFish=xBlueFish+1
+  }
 
 }
 
