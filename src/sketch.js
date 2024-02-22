@@ -2,6 +2,8 @@ let clicked=false;
 
 let xBlueFish=200;
 
+let rotateBlueFish=0
+
 function setup() {
   // These lines are fitting our canvas
   // where we want in the DOM
@@ -18,7 +20,7 @@ function draw() {
 
   drawBlueFish(xBlueFish, 400, color(156, 212, 240), color(0, 89, 240))
 
-  drawOrangeFish(200,400)
+  drawOrangeFish(200,400, rotateBlueFish)
 
   if (clicked) {
     xBlueFish=xBlueFish+1
@@ -30,7 +32,7 @@ function drawBlueFish (x, y, colorBody, colorBodyFin) {
   
   push();
       
-      translate(x, y); 
+      translate(x, y);
   
 // Back Fin
   
@@ -90,12 +92,13 @@ function drawBlueFish (x, y, colorBody, colorBodyFin) {
   
 }
 
-function drawOrangeFish(x, y) {
+function drawOrangeFish(x, y, rotateBlueFish) {
   
   push();
       
       translate(x, y); 
-  
+      rotate(rotateBlueFish);  
+
 // Back Fin
   
   fill(240, 138, 67)
