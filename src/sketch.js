@@ -22,7 +22,7 @@ function draw() {
 
   drawBlueFish(xBlueFish, 400, color(156, 212, 240), color(0, 89, 240))
 
-  drawOrangeFish(200,400, scaleOrangeFish, rotateBlueFish)
+  drawOrangeFish(300,200, scaleOrangeFish, rotateBlueFish)
 
   if (clicked) {
     xBlueFish=xBlueFish+1
