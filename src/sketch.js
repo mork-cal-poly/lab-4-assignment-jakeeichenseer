@@ -2,7 +2,7 @@ let clicked=false;
 
 let xBlueFish=200;
 
-let rotateBlueFish=0
+let rotateOrangeFish=0
 
 let scaleOrangeFish = 0.4
 
@@ -22,11 +22,13 @@ function draw() {
 
   drawBlueFish(xBlueFish, 400, color(156, 212, 240), color(0, 89, 240))
 
-  drawOrangeFish(300,200, scaleOrangeFish, rotateBlueFish)
+  drawOrangeFish(300,200, scaleOrangeFish, rotateOrangeFish)
 
   if (clicked) {
     xBlueFish=xBlueFish+1
   }
+
+  rotateOrangeFish = rotateOrangeFish + 1
 
 }
 
@@ -94,13 +96,13 @@ function drawBlueFish (x, y, colorBody, colorBodyFin) {
   
 }
 
-function drawOrangeFish(x, y, scaleOrangeFish, rotateBlueFish) {
+function drawOrangeFish(x, y, scaleOrangeFish, rotateOrangeFish) {
   
   push();
       
       translate(x, y); 
       scale(scaleOrangeFish)
-      rotate(rotateBlueFish);  
+      rotate(rotateOrangeFish);  
 
 // Back Fin
   
@@ -196,7 +198,5 @@ function drawBackground(x, y) {
 function mouseClicked()
 {
   if (mouseX > 25 && mouseX < 320 && mouseY > 205 && mouseY < 400)
-  clicked = !clicked;      
-  
-
+  clicked = !clicked;
 }
