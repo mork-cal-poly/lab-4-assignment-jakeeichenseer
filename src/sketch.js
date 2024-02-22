@@ -189,7 +189,7 @@ function drawBackground(x, y) {
 
 function mouseClicked()
 {
-  if (mouseX > 25 && mouseX < 320 && mouseY > 0 && mouseY < 195)
+  if (mouseX > 25 && mouseX < 320 && mouseY > 205 && mouseY < 400)
   clicked = !clicked;      
   
 
