@@ -16,9 +16,9 @@ function draw() {
 
   drawBackground(0, 0)
 
-  drawCreature(xBlueFish, 400, color(156, 212, 240), color(0, 89, 240))
+  drawBlueFish(xBlueFish, 400, color(156, 212, 240), color(0, 89, 240))
 
-  drawFish(200,400)
+  drawOrangeFish(200,400)
 
   if (clicked) {
     xBlueFish=xBlueFish+1
@@ -26,7 +26,7 @@ function draw() {
 
 }
 
-function drawCreature (x, y, colorBody, colorBodyFin) {
+function drawBlueFish (x, y, colorBody, colorBodyFin) {
   
   push();
       
@@ -90,7 +90,7 @@ function drawCreature (x, y, colorBody, colorBodyFin) {
   
 }
 
-function drawFish(x, y) {
+function drawOrangeFish(x, y) {
   
   push();
       
