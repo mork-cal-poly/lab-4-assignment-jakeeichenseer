@@ -4,6 +4,8 @@ let xBlueFish=200;
 
 let rotateBlueFish=0
 
+let scaleOrangeFish = 0.4
+
 function setup() {
   // These lines are fitting our canvas
   // where we want in the DOM
@@ -20,7 +22,7 @@ function draw() {
 
   drawBlueFish(xBlueFish, 400, color(156, 212, 240), color(0, 89, 240))
 
-  drawOrangeFish(200,400, rotateBlueFish)
+  drawOrangeFish(200,400, scaleOrangeFish, rotateBlueFish)
 
   if (clicked) {
     xBlueFish=xBlueFish+1
@@ -92,11 +94,12 @@ function drawBlueFish (x, y, colorBody, colorBodyFin) {
   
 }
 
-function drawOrangeFish(x, y, rotateBlueFish) {
+function drawOrangeFish(x, y, scaleOrangeFish, rotateBlueFish) {
   
   push();
       
       translate(x, y); 
+      scale(scaleOrangeFish)
       rotate(rotateBlueFish);  
 
 // Back Fin
