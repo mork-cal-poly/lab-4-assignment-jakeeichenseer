@@ -6,6 +6,8 @@ let rotateOrangeFish=0
 
 let scaleOrangeFish = 0.4
 
+let rocket;
+
 function setup() {
   // These lines are fitting our canvas
   // where we want in the DOM
@@ -15,10 +17,17 @@ function setup() {
   myCanvas.parent("canvas-parent");
 }
 
+function preload() {
+  rocket = loadImage("assets/rocket.png");
+}
+
 function draw() {
   background(173, 216, 230);
 
   drawBackground(0, 0)
+
+
+  drawRocket(280,120)
 
   drawBlueFish(xBlueFish, 400, color(156, 212, 240), color(0, 89, 240))
 
@@ -201,4 +210,12 @@ function mouseClicked()
 {
   if (mouseX > 25 && mouseX < 320 && mouseY > 205 && mouseY < 400)
   clicked = !clicked;
+}
+
+function drawRocket(x, y) {
+  push();
+  translate(x, y);
+  scale(0.025);
+  image(rocket, 0, 0);
+  pop();
 }
