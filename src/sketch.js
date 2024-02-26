@@ -38,7 +38,7 @@ function draw() {
   }
 
   if (xBlueFish >= 400) {
-    rotateOrangeFish = rotateOrangeFish + 0.5
+    rotateOrangeFish = rotateOrangeFish + 0.2
   }
 
 }
