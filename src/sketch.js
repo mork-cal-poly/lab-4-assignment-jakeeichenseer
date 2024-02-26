@@ -29,7 +29,7 @@ function draw() {
 
   drawRocket(280,120)
 
-  drawBlueFish(xBlueFish, 400, color(156, 212, 240), color(0, 89, 240))
+  drawBlueFish(xBlueFish, 400, color(61,142,222), color(0, 89, 240))
 
   drawOrangeFish(300,200, scaleOrangeFish, rotateOrangeFish)
 
@@ -154,7 +154,7 @@ function drawOrangeFish(x, y, scaleOrangeFish, rotateOrangeFish) {
   
 // Body
   
-  fill(45, 114, 178)
+  fill(255, 255, 100)
   ellipse(0, -130, 300, 180)
   
 // Eye
