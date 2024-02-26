@@ -154,7 +154,7 @@ function drawOrangeFish(x, y, scaleOrangeFish, rotateOrangeFish) {
   
 // Body
   
-  fill(255, 255, 100)
+  fill(45, 114, 178)
   ellipse(0, -130, 300, 180)
   
 // Eye
